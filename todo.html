@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./todo.css">
+</head>
+<body>
+    <div class="top">
+        <h1 class="head">TodoList</h1>
+        <div class="lis">
+            <div class="memo">
+                <div class="buttons">
+                    <span>
+                        <label for="">할일 리스트</label>
+                        <input type="checkbox" id="check">
+                    </span>
+                    <span>
+                        <label for="">제목</label>
+                        <input type="text" id="tlit">
+                    </span>
+                    <span>
+                        <label for="">날짜</label>
+                        <input type="date" id="time">
+                    </span>
+                    <span>
+                        <label for="">내용</label>
+                        <input type="text" id="content">
+                    </span>
+                    <input type="submit" class="but" value="눌러" onclick="create()">
+                    <button type="submit" onclick="deleteBtn()" id="btn">삭제</button>
+                    <div id="box">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./todo.js"></script>
+</html>
